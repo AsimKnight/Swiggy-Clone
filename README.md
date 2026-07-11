@@ -49,10 +49,6 @@ A responsive Swiggy landing page clone built using React and Tailwind CSS. This 
 
 ![footer](./photos/footer.png)
 
-### full Landing Page
-
-![fullPage](./photos/full-screen-shot.png)
-
 ---
 
 ## ⚙️ Installation

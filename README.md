@@ -1,16 +1,99 @@
-# React + Vite
+# 🍔 Swiggy Clone (Landing Page)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live Demo](https://swiggy-clone.vercel.app)
 
-Currently, two official plugins are available:
+A responsive Swiggy landing page clone built using React and Tailwind CSS. This project focuses on creating a clean UI and smooth user experience similar to the Swiggy platform.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Dynamic food cards
+- Horizontal scroll sections
+- Reusable React components
+- Clean and modern UI
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- React.js
+- Tailwind CSS
+- JavaScript (ES6+)
+
+---
+
+## 📸 Screenshots
+
+### Home section
+
+![Home](./screenshots/home.png)
+
+### Food Section
+
+![Food](./screenshots/foods.png)
+
+### Groceries section
+
+![Groceries](./screenshots/groceries.png)
+
+### Restaurant section
+
+![Restaurant](./screenshots/restaurant.png)
+
+### Cities section
+
+![Cities](./screenshots/cities.png)
+
+### footer section
+
+![footer](./screenshots/footer.png)
+
+### full Landing Page
+
+![fullPage](./screenshots/full-screen-shot.png)
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/AsimKnight/swiggy-clone.git
+cd swiggy-clone
+npm install
+npm run dev
+```
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── components/
+ ├── utils/
+ ├── pages/
+ ├── App.jsx
+```
+
+---
+
+## 🎯 Future Improvements
+
+- Make it responsive
+- Add restaurant detail page
+- Add cart functionality
+- Integrate real API
+- Add authentication (login/signup)
+
+---
+
+## 👨‍💻 Author
+
+Asim Shaikh
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a star ⭐

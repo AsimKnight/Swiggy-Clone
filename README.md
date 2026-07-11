@@ -23,35 +23,35 @@ A responsive Swiggy landing page clone built using React and Tailwind CSS. This 
 
 ---
 
-## 📸 Screenshots
+## 📸 screenshots
 
 ### Home section
 
-![Home](./screenshots/home.png)
+![Home](./photos/home.png)
 
 ### Food Section
 
-![Food](./screenshots/foods.png)
+![Food](./photos/foods.png)
 
 ### Groceries section
 
-![Groceries](./screenshots/groceries.png)
+![Groceries](./photos/groceries.png)
 
 ### Restaurant section
 
-![Restaurant](./screenshots/restaurant.png)
+![Restaurant](./photos/restaurant.png)
 
 ### Cities section
 
-![Cities](./screenshots/cities.png)
+![Cities](./photos/cities.png)
 
 ### footer section
 
-![footer](./screenshots/footer.png)
+![footer](./photos/footer.png)
 
 ### full Landing Page
 
-![fullPage](./screenshots/full-screen-shot.png)
+![fullPage](./photos/full-screen-shot.png)
 
 ---
 

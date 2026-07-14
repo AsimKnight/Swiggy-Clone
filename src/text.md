@@ -1,3 +1,3 @@
-restaurant data : https://www.swiggy.com/restaurants
+restaurant data = https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.027892&lng=72.506543&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING
 
-pizza-hut : https://www.swiggy.com/city/ahmedabad/pizza-hut-prahlad-nagar-rest37650
+pizza-hut = https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.027892&lng=72.506543&restaurantId=37650&catalog_qa=undefined&submitAction=ENTER

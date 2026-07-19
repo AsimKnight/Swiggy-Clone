@@ -1,6 +1,8 @@
+// "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.027892&lng=72.506543",
 import React, { useEffect, useState, useRef } from "react";
 import RestoCard from "./RestoCard";
 import Arrow from "./Arrow";
+import Shimmer from "./Shimmer";
 
 const Restaurant = () => {
   const [restoData, setRestoData] = useState([]);
@@ -12,9 +14,7 @@ const Restaurant = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch(
-          "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.027892&lng=72.506543",
-        );
+        const res = await fetch("http://localhost:5000/api/restaurants");
         const data = await res.json();
 
         const allRestoArray =
@@ -42,6 +42,10 @@ const Restaurant = () => {
       left: step,
       behavior: "smooth",
     });
+  }
+
+  if (restoData.length === 0) {
+    return <Shimmer />;
   }
 
   return (

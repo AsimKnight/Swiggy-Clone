@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -52,13 +53,13 @@ const Header = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <a href="https://www.swiggy.com/restaurants">
+        <Link to={"/restaurant"}>
           <img
             src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/faa6d07d-e43c-4aa1-90d8-eda6c14e467d_Food2BU.png"
             alt="card-img-left"
             className="h-115 w-150 object-contain"
           />
-        </a>
+        </Link>
         <a href="https://www.swiggy.com/instamart?entryId=1234&entryName=mainTileEntry4&v=1">
           <img
             src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/7a7904a7-e0a9-4466-8226-715999664e83_IM2BU.png"

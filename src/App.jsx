@@ -1,37 +1,21 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 
-import Header from "./COMPONENT/Header";
-import FoodOptions from "./COMPONENT/FoodOptions";
-import GroceryOptions from "./COMPONENT/GroceryOptions";
-import RestaurantOptions from "./COMPONENT/RestaurantOptions";
-import SwiggyMobileBanner from "./COMPONENT/SwiggyMobileBanner";
-import CityWiseFoodGridOptions from "./COMPONENT/CityWiseFoodGridOptions";
-import CityWiseGroceryGridOptions from "./COMPONENT/CityWiseGroceryGridOptions";
-import Footer from "./COMPONENT/Footer";
+import Home from "./COMPONENT/Home";
 import Restaurant from "./COMPONENT/Restaurant";
+import RestaurantMenu from "./COMPONENT/RestaurantMenu";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <div>
-                <Header />
-                <FoodOptions />
-                <GroceryOptions />
-                <RestaurantOptions />
-                <SwiggyMobileBanner />
-                <CityWiseFoodGridOptions />
-                <CityWiseGroceryGridOptions />
-                <Footer />
-              </div>
-            }
-          ></Route>
+          <Route path="/" element={<Home />}></Route>
           <Route path="/restaurant" element={<Restaurant />}></Route>
+          <Route
+            path="/city/ahmedabad/:id"
+            element={<RestaurantMenu />}
+          ></Route>
         </Routes>
       </BrowserRouter>
     </>

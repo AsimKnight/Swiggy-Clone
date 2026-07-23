@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import MenuCard from "./MenuCard";
 
 const RestaurantMenu = () => {
   const [singleRestData, setSingleRestData] = useState([]);
@@ -19,12 +20,31 @@ const RestaurantMenu = () => {
 
       const data = await res.json();
       console.log(data);
-      setSingleRestData(data);
+
+      const tempData =
+        data?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+
+      const filterTempData = tempData.filter((el) => "title" in el?.card?.card);
+
+      setSingleRestData(filterTempData);
     }
     fetchData();
   }, []);
-  // console.log("line after fetch data " + singleRestData?.data?.isQCLink);
-  return <div>RestaurantMenu id is {id}</div>;
+
+  console.log(singleRestData);
+  return (
+    <>
+      <div className="w-[80%] mx-auto mt-20">
+        {singleRestData.map((menuItem) => (
+          <MenuCard
+            key={menuItem?.card?.card?.title}
+            cards={menuItem?.card?.card}
+          />
+        ))}
+      </div>
+      {}
+    </>
+  );
 };
 
 export default RestaurantMenu;
